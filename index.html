@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Park</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚗 Smart Park</h1>
+    <p class="subtitle">Real-time Parking Availability & Booking</p>
+
+    <div class="card">
+        <div class="form">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="text" id="vehicle" placeholder="Vehicle Number">
+            <input type="number" id="hours" placeholder="Parking Duration (hrs)">
+        </div>
+
+        <p class="rate">Rate: ₹50 / hour</p>
+
+        <div class="parking-area">
+            <div class="slot available" onclick="bookSlot(this,1)">Slot 1</div>
+            <div class="slot booked">Slot 2<br><small>Occupied</small></div>
+            <div class="slot available" onclick="bookSlot(this,3)">Slot 3</div>
+            <div class="slot booked">Slot 4<br><small>Occupied</small></div>
+            <div class="slot available" onclick="bookSlot(this,5)">Slot 5</div>
+            <div class="slot booked">Slot 6<br><small>Occupied</small></div>
+        </div>
+
+        <p id="message"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
